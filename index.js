@@ -6,6 +6,7 @@ var gameEnd = false;
 var o = 'O';
 var oText = 'Turn: Player O';
 var turn = x;
+var turnCount = 0;
 var board = {
   0: {
     0: null,
@@ -34,6 +35,7 @@ var reset = function() {
       board[i][j] = null;
     }
   }
+  turnCount = 0;
   gameEnd = false;
 }
 
@@ -44,6 +46,11 @@ var changeTurn = function() {
   } else {
     turn = x;
     $('.text').text(xText);
+  }
+  turnCount++;
+  if (turnCount === 9) {
+    gameEnd = true;
+    $('.text').text('Draw! Click Me to Reset!');
   }
 }
 
