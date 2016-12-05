@@ -1,0 +1,45 @@
+.title {
+    text-align: center;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  width: 160px;
+}
+
+td {
+  box-sizing: border-box;
+  max-height: 33%;
+  max-width: 33%;
+  height: 50px;
+  background-color: aliceblue;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: rgba(0,0,0,.05);
+}
+
+#11 {
+  border: 1px solid black;
+}
+
+#01, #21 {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#12, #10 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.text {
+  text-align: center;
+  cursor: pointer;
+}
